@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>My Blog Page</h1>
+  <br>
+  <div style="padding:20px 0px;" *ngFor="let blog of blogs">
+<div class="card" >
+  <div class="card-header">
+   {{ blog.title}}
+   <button type="button" class="close" aria-label="Close"   (click)="removeBlog(blog)">
+  <span aria-hidden="true">&times;</span>
+</button>
+  </div>
+  <div class="card-body">
+    
+    <p class="card-text">{{ blog.content}}</p>
+   
+  </div>
+</div>
+  </div>
+</div>
